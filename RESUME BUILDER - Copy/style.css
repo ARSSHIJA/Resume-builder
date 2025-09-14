@@ -1,0 +1,205 @@
+/* General */
+body {
+  font-family: "Calibri", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f9;
+  color: #333;
+}
+
+/* Resume Layout */
+.resume-container {
+  display: flex;
+  width: 850px;
+  min-height: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Left Column */
+.left-column {
+  width: 30%;
+  background: #2f2f4f;
+  color: white;
+  padding: 25px;
+}
+
+.left-column h1 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.left-column h3 {
+  font-size: 18px;
+  color: #d1d1f0;
+  margin-bottom: 20px;
+}
+
+.left-column p, .left-column a {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #eee;
+  text-decoration: none;
+}
+
+/* Right Column */
+.right-column {
+  width: 70%;
+  padding: 25px;
+  background: #fafafa;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #000000;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 5px;
+}
+
+.section p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0;
+}
+
+.section ul {
+  padding-left: 20px;
+  margin: 5px 0;
+}
+
+.section ul li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+/* Education alignment */
+#r-education li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.edu-degree {
+  font-weight: bold;
+  color: #222;
+}
+
+.edu-year {
+  font-style: italic;
+  color: #555;
+}
+
+/* Internship styling */
+#r-internship-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+#r-internship-desc {
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+}
+
+/* Bright white headings in left column */
+.left-column .section h2 {
+  color: #ffffff;
+}
+
+/* Form Page */
+.form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.form-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2f2f4f;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form textarea {
+  min-height: 70px;
+}
+
+form button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #2f2f4f;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background: #1c1c2a;
+}
+
+/* Download Button */
+.download-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background: #2f2f4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.download-btn:hover {
+  background: #1c1c2a;
+}
+
+/* Hide button when printing */
+@media print {
+  body {
+    background: white;
+  }
+  .resume-container {
+    width: 794px;
+    min-height: 1123px;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .download-btn {
+    display: none;
+  }
+}
